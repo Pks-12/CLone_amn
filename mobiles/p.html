@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #main-image-container {
+            position: relative;
+        }
+
+        .main-imageinside {
+            position: absolute;
+            display: none;
+        }
+
+        .main-imageinside img {
+            width: 100%;
+            height: auto;
+        }
+
+        .fourboxinsidebox:hover + #main-image-container .main-imageinside {
+            display: block;
+        }
+
+        .circle {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        .icons {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="fourouterbox">
+        <div class="fourboxinsidebox">
+            <img src="B1_1.jpg" class="inside_img" alt="Image1">
+        </div>
+
+        <div class="fourboxinsidebox">
+            <img src="B1_2.jpg" class="inside_img" alt="Image2">
+        </div>
+
+        <div class="fourboxinsidebox">
+            <img src="B1_3.jpg" class="inside_img" alt="Image3">
+        </div>
+
+        <div class="fourboxinsidebox">
+            <img src="B1_4.jpg" class="inside_img" alt="Image4">
+        </div>
+
+        <div class="fourboxinsidebox">
+            <img src="B1_5.jpg" class="inside_img" alt="Image5">
+        </div>
+
+        <div class="fourboxinsidebox">
+            <img src="B1_6.jpg" class="inside_img" alt="Image6">
+        </div>
+    </div>
+
+    <div id="main-image-container">
+        <div class="main-imageinside">
+            <div class="circle">
+                <div class="icons">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <img src="B1_1.jpg" class="maininside_img" alt="Image1">
+        </div>
+        
+
+</body>
+</html>
